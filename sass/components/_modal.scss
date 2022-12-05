@@ -1,0 +1,38 @@
+.modal {
+    margin: auto;
+    padding: 40px;
+    width: 528px;
+    height: 581px;
+    background-color: var(--color-white);
+    border-radius: 4px;
+    position: relative;
+    text-align: left;
+
+
+&__button {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    display: flex;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    cursor: pointer;
+}
+
+&__button-close-icon {
+    margin: auto;
+    width: 18px;
+    height: 18px;
+}
+
+&__header {
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+}}
