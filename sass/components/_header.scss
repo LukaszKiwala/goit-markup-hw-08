@@ -14,8 +14,13 @@
 
 
 &__nav {
-    display: flex;
+    display: none;
     align-items: center;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        
+    }
 }
 
 &__logo--black {
@@ -65,10 +70,24 @@
 
 
 &__contact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
+    display: none;
+    // justify-content: center;
+    // align-items: center;
+    // gap: 50px;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: auto;
+    }
+    @media screen and (min-width: 1200px) {
+        display: flex;
+            flex-direction: row;
+            gap: 30px;
+            margin: auto;
+    }
+
 }
 
 &__contact-item {

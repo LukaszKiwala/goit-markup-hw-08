@@ -21,39 +21,16 @@
     <!-- === Header ===  -->
 
     <header class="header">
+
+      <!-- mobile menu -->
+
+      
+
+
+      <!-- mobile menu ends -->
       <div class="container header__content">
-        <!-- mobile menu -->
-        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-          <svg width="24" height="24" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-            <path
-              fill-rule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clip-rule="evenodd"
-            ></path>
-          </svg>
-        </button>
-
-        <div class="menu-container js-menu-container" id="mobile-menu">
-          <button class="menu-toggle js-close-menu">
-            <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-              <path
-                fill-rule="evenodd"
-                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-          </button>
-
-          <ul class="mobile-menu d-none">
-            <li><a href="" class="link">Agencja</a></li>
-            <li><a href="" class="link">Portfolio</a></li>
-            <li><a href="" class="link">Kontakt</a></li>
-          </ul>
-        </div>
-        <!-- mobile menu ends -->
-
+        <a href="index.html" class="header__logo--black"> Web<span class="logo__studio">Studio</span></a>
         <nav class="header__nav">
-          <a href="index.html" class="header__logo--black"> Web<span class="logo__studio">Studio</span></a>
           <ul class="header__nav-list">
             <li>
               <a href="#" class="header__link nav-highlight">Agencja</a>
@@ -64,6 +41,7 @@
             <li><a href="#" class="header__link">Kontakt</a></li>
           </ul>
         </nav>
+        
         <ul class="header__contact">
           <li>
             <a href="mailto:info@devstudio.com" class="header__contact-item"
@@ -229,7 +207,7 @@
 
       <!-- === What we do ===  -->
 
-      <section class="container section">
+      <section class="container section what-we-do-container">
         <h2 class="what-we-do__header">Czym się zajmujemy</h2>
 
         <ul class="what-we-do">
@@ -507,12 +485,6 @@
     </footer>
 
     <script src="./js/modal.js"></script>
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-      crossorigin="anonymous"
-    ></script>
-    <script defer src="js/mobile-menu.js"></script>
+  
   </body>
 </html>

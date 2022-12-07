@@ -7,18 +7,25 @@
     justify-content: center;
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     letter-spacing: 0.03em;
     line-height: 1.1;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     background-color: var();
+
+    @media screen and (min-width: 1200px) {
+        font-size: 36px;
+        margin-bottom: 50px;
+    }
+
 }
 
 &__list {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     gap: 30px;
+    flex-wrap: wrap;
 }
 
 &__item {

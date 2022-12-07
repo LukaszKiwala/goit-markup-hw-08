@@ -1,22 +1,76 @@
 .section-primary {
     margin: 0 auto;
     max-width: 1600px;
-    padding: 200px 0;
+    padding: 118px 0;
     text-align: center;
     background-color: var(--color-grey2);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/background-photo-index.jpg);
+    
     background-repeat: no-repeat;
     background-position: 50% 50%;
+    background-size: cover;
+
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(/images/hero-sm@1x.jpg);
+    
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(/images/hero-sm@2x.jpg);
+        }
+    
+        @media screen and (min-width: 768px) {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(/images/hero-md@1x.jpg);
+    
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                    url(/images/hero-md@2x.jpg);
+            }
+        }
+    
+        @media screen and (min-width: 1200px) {
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 200px 0;
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(/images/hero-lg@1x.jpg);
+    
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                    url(/images/hero-lg@2x.jpg);
+            }
+        }
+    
+
+    
 
 
 &__header {
     margin-bottom: 30px;
+
     font-style: normal;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     color: var(--color-white);
+    
+@media screen and (min-width: 480px) {
+        width: 360px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media screen and (min-width: 768px) {}
+
+    @media screen and (min-width: 1200px) {
+        width: 696px;
+    }
+
 }
 
 &__button {
