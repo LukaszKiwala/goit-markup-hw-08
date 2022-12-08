@@ -130,7 +130,8 @@
         display: block;
     }
     @media screen and (min-width: 768px) {
-        
+        flex-wrap: wrap;
+        flex-basis: calc((100% - 30px) / 2);
     }
 }
 
@@ -232,7 +233,7 @@ text-align: center;
 
 &__newsletter-button {
     margin-inline: auto;
-    padding: 10px 28px 10px 42px;
+    // padding: 10px 28px 10px 42px;
     display: flex;
    width: 200px;
    height: 50px;
