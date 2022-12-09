@@ -1,18 +1,44 @@
 .our-advantages {
     display: flex;
-    flex-direction: row;
     margin-top: 94px;
     gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    @media screen and (min-width: 768px) {
+           flex-direction: row;
+           flex-wrap: wrap;
+        flex-basis: calc((100% - 30px) / 2);
+        }
+    
+    @media screen and (min-width: 1200px) {
+           flex-direction: row;
+           flex-wrap: nowrap;
+        }
 
 
 &__card {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 270px;
-    height: 120px;
+    padding: 25px 100px;
+    // width: 270px;
+    // height: 120px;
     background: var(--color-very-light-grey);
     border-radius: 4px;
+
+    @media screen and (min-width: 768px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding: 25px 142px;
+            flex-basis: calc((100% - 30px) / 2);
+        }
+    
+        @media screen and (min-width: 1200px) {
+            // flex-direction: row;
+            // flex-wrap: nowrap;
+            padding: 25px 100px;
+        }
 }
 
 &__header {
@@ -21,6 +47,18 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            text-align: start;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
 }
 
 &__text {
@@ -29,4 +67,22 @@
     font-size: 14px;
     line-height: 1.71;
     color: var(--color-grey);
+
+@media screen and (min-width: 768px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    
+}
+
+&__item {
+
+@media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 30px) / 2);
+    }
 }}

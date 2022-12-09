@@ -22,7 +22,35 @@
 
     <header class="header">
       <!-- mobile menu -->
+      <div class="mobile-menu d-none">
+        <button class="toggle-menu">
+          <svg class="menu-burger__icon-closer" width="40" height="40">
+            <use href="./images/icons.svg#icon-Vector"></use>
+          </svg>
+        </button>
 
+        <nav class="mobile-menu__navigation">
+          <ul class="mobile-menu__list list-style">
+            <li>
+              <a href="index.html" class="header__link">Agencja</a>
+            </li>
+            <li>
+              <a href="portfolio.html" class="header__link">Portfolio</a>
+            </li>
+            <li><a href="#" class="header__link">Kontakt</a></li>
+          </ul>
+        </nav>
+        <div class="mobile-menu__contacts">
+          <a class="header__contact-item" href="tel:+48111111111"> +48 111 111 111</a>
+          <a class="header__contact-item" href="mailto:info@example.com"> info@devstudio.com</a>
+        </div>
+        <ul class="mobile-menu__social list-style">
+          <li class="mobile-menu__social-item">Instagram</li>
+          <li class="mobile-menu__social-item">Twitter</li>
+          <li class="mobile-menu__social-item">Facebook</li>
+          <li class="mobile-menu__social-item">LinkedIn</li>
+        </ul>
+      </div>
       <!-- mobile menu ends -->
       <div class="container header__content">
         <a href="index.html" class="header__logo--black"> Web<span class="logo__studio">Studio</span></a>
@@ -37,6 +65,12 @@
             <li><a href="#" class="header__link">Kontakt</a></li>
           </ul>
         </nav>
+
+        <button class="menu-burger">
+          <svg class="menu-burger__icon-opener" width="40" height="40">
+            <use href="./images/icons.svg#menu-opener"></use>
+          </svg>
+        </button>
 
         <ul class="header__contact">
           <li>
@@ -148,9 +182,9 @@
 
       <!-- === Our Advantages ===  -->
 
-      <section class="container">
+      <section class="container section">
         <ul class="our-advantages">
-          <li>
+          <li class="our-advantages__item">
             <div class="our-advantages__card">
               <svg width="70px" height="70px">
                 <use href="./images/icons.svg#icon-antenna-1"></use>
@@ -162,7 +196,7 @@
               et malesuada
             </p>
           </li>
-          <li>
+          <li class="our-advantages__item">
             <div class="our-advantages__card">
               <svg width="70px" height="70px">
                 <use href="./images/icons.svg#icon-clock-1"></use>
@@ -174,7 +208,7 @@
               et malesuada
             </p>
           </li>
-          <li>
+          <li class="our-advantages__item">
             <div class="our-advantages__card">
               <svg width="70px" height="70px">
                 <use href="./images/icons.svg#icon-diagram-1"></use>
@@ -186,7 +220,7 @@
               et malesuada
             </p>
           </li>
-          <li>
+          <li class="our-advantages__item">
             <div class="our-advantages__card">
               <svg width="70px" height="70px">
                 <use href="./images/icons.svg#icon-astronaut-1"></use>
@@ -481,5 +515,6 @@
     </footer>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
